@@ -1,0 +1,434 @@
+﻿body {
+  font-family: Arial, sans-serif;
+  padding-top: 18vw; 
+}
+.hamburger span {
+    width: 30vw;
+    height: 3vw;
+    background-color: black;
+    margin: 5px;
+    transition: 0.3s;
+}
+.hamburger {
+        display: absolute;
+}
+ .nav-links.open {
+        transform: translateX(0%);
+}
+   .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color: black;
+    padding: 0vw;
+    text-align: lift;
+z-index: 1002;
+
+  font-size: 2.2vw;
+}
+.navbar {
+  display: flex;
+  justify-content: none;
+  list-style-type: none;
+  padding: 0vw;
+  margin: 0vw;
+  background-color:lightblue;
+
+
+       
+}
+
+/* تنسيق الروابط */
+.navbar li a {
+  display: flex;
+  color:black;
+  text-align: center;
+  padding: .5vw 1.1vw;
+  text-decoration: none;
+}
+
+/* وضع الروابط العربية على اليمين */
+.navbar li:nth-last-child(-n+4) {
+  float: right;
+}
+
+/* تغيير لون الخلفية عند التمرير */
+.navbar li a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.section {
+    height: auto; /* تحديد ارتفاع الأقسام */
+    padding: 0.1vw;
+}
+.section1 {
+    height: auto; /* تحديد ارتفاع الأقسام */
+    padding: 0.1vw;
+}
+
+#section1 {
+ background-color:;
+}
+
+.image-container {
+  position: relative;
+  text-align: lift;
+  color: white;
+}
+
+/* تنسيق الصورة */
+.background-image {
+  width: 100%;
+  height: auto;
+  opacity: 1; /* للتحكم في شفافية الصورة */
+}
+
+/* النص فوق الصورة */
+.text-overlay {
+  position: flex;
+  top: 20%;
+  left: 50%;
+  transform: translate(0%, -450%);
+  color: black;
+z-index: 1001;
+}
+.text-overlay1 {
+position: relative;
+  top: 25%;
+  lift: 25%;
+  transform: translate( 0% ,-95%);
+  color: brown;
+z-index: 1001;
+ 
+}
+
+.text-overlay h1 {
+  font-size: 2vw;
+  margin: 1vw;
+}
+.text-overlay1 h2 {
+  font-size: 1.8vw;
+  margin: 0vw;
+
+}
+.text-overlay1 h1 {
+  font-size: 3vw;
+color: gold;
+}
+
+.text-overlay p {
+  font-size: 1.9vw;
+}
+ .button1 {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 1.5vw 1vw;
+            text-align: center;
+            font-size: 2vw;
+            margin-top:0vw;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 1vw;
+
+
+
+}
+ .button1:hover {
+            background-color:#321554;
+}
+ .button2 {
+            background-color:gold;
+            border: none;
+            color: black;
+            padding: 1vw 3vw;
+            text-align: center;
+            font-size: 1.5vw;
+            margin-top:0vw;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 1vw;
+
+}
+.button2:hover {
+            background-color:red;
+}
+
+ .call-button {
+            background-color:#28a745;
+            color: white;
+            border: none;
+            padding: 1vw 2vw;
+            font-size: 2vw;
+            transition: background-color .3s ease; 
+            justify-content: right;
+            align-itvws: center;
+            height: 4vw;
+            margin: 0;
+            border-radius: 5vw;
+}
+
+        /* تغيير لون الزر عند التمرير */
+        .call-button:hover {
+            background-color:#f5b301;
+        }
+#section2 {
+    background-color: ;
+}
+
+#section3 {
+}
+       .rating {
+            display: relative;
+            direction: rtl;
+
+
+ }
+
+        .rating input {
+            display: none; /* إخفاء مربعات الاختيار */
+        }
+
+        .rating label {
+            font-size: 5vw;
+            color: #ddd;
+            cursor: pointer;
+            transition: color 0.3s ease;
+}
+.rating {
+ align-itvws: lift;
+ transform: translatex(-39%);
+ 
+}
+
+        .rating input:checked ~ label, /* عند تحديد النجم */
+        .rating input:hover ~ label, /* عند التمرير فوق النجوم */
+        .rating label:hover ~ label {
+            color: #f5b301;
+
+}
+
+#section4 {
+}
+ .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: .5vw; /* المسافة بين الصور */
+            justify-content: center;
+
+        }
+
+        .gallery .image-container {
+            position: relative;
+            max-width: 20%;
+        }
+
+        .gallery img {
+         max-width: 100%;
+         height: auto;.
+            object-fit: cover;
+            border-radius: 1vw;
+            transition: transform 0.3s ease;
+        }
+
+        /* تكبير الصورة عند التمرير */
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        /* إضافة الشرح على الصورة */
+        .gallery .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.6); /* خلفية نصف شفافة */
+            color: white;
+            text-align: center;
+max-width: 100%;
+
+            padding: 1vw;
+            font-size: 1.5vw;
+            border-bottom-left-radius: .5vw;
+            border-bottom-right-radius: .5vw;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        /* إظهار الشرح عند التمرير على الصورة */
+        .image-container:hover .caption {
+            opacity: 1;
+        }
+
+#section5 {
+    .................
+}
+
+        	box-sizing: border-box;}
+        body {font-family: Arial, sans-serif; margin: 0;}
+
+
+
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+            overflow: 0;
+        }
+
+        .slides {
+            display: none;
+            position: relative;
+        }
+
+        img {
+  max-width:100%;
+ height:61vw ;
+}
+
+        /* التنسيق للعناوين والوصف */
+        .text {
+            position: absolute;
+            bottom: 5vw;
+            right: 40%;
+	    transform: translatex(-50%);
+            color: black;
+            text-align: right;
+        }
+
+        .text h1 {
+            font-size: 1.5vw;
+            margin: 0;
+            padding: 0;
+        }
+
+        .text p {
+            font-size: 1.2vw;
+            margin: 0vw 0;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: .3vw 1vw;
+            text-align: center;
+            font-size: 2vw;
+            margin-top: 2vw;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 3vw;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 20%;
+            width: auto;
+            padding: 1vh;
+            margin-top: -20vh;
+            color: white;
+            font-weight: bold;
+            font-size: 1.5vw;
+            transition: 2s ease;
+            border-radius: 0 1vh 1vh 0;
+            user-select: none;
+
+        }
+
+        .next {
+            right: 0;
+            border-radius: 1vh 0 0 1vh;
+        }
+
+        .prev:hover, .next:hover {
+            background-color:green;
+        }
+
+        .dots {
+            text-align: center;
+            margin-top: 1vw;
+        }
+
+        .dots span {
+            cursor: pointer;
+            height: 1vw;
+            width:1vw;
+            margin: 0 0.5vw;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active, .dots span:hover {
+            background-color: #717171;
+        }
+
+      .whatsapp-button {
+      background-color: #25D366;
+      color: white;
+      padding: .8vw 1vw;
+      font-size: 1.2vw;
+      border: none;
+      border-radius: 2vw;
+      cursor: pointer;
+      text-align: left;
+
+	    transform: translatex(+10%);
+      display: inline-block;
+    }
+
+    .whatsapp-button:hover {
+      background-color: red;
+    }
+
+    /* تنسيق النص */
+    h3 {
+      font-family: Arial, sans-serif;
+  font-size: 1.5vw;
+            margin:1vw;
+    text-align: center;
+            
+ 
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: .1vw 0;
+    margin-top: 2vw;
+
+padding: 0.1vw 40vw;
+}
+.logo {
+            position: fixed;
+            top: 0; 
+            transform: translate(0% , 20%);
+            width: 15vw;
+            height: auto; 
+            z-index: 1000;
+        }
+
+.arabic-text {
+  direction: rtl;
+  text-align: right;
+  font-family: 'Arial', sans-serif;
+}
+
+.english-text {
+  direction: ltr;
+  text-align: left;
+ 
+}
